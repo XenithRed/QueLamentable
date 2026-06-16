@@ -1,0 +1,9 @@
+import { copyFileSync, existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+const envPath = resolve(process.cwd(), '.env');
+const examplePath = resolve(process.cwd(), '.env.example');
+
+if (!existsSync(envPath) && existsSync(examplePath)) {
+  copyFileSync(examplePath, envPath);
+}

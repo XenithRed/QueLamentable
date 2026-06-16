@@ -1,0 +1,42 @@
+{
+  "name": "alya-fornew",
+  "version": "1.0.0",
+  "description": "Alya ForNew — Bot avanzado de WhatsApp por Tzar",
+  "type": "module",
+  "author": {
+    "name": "Tzar"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@jzszdznzzl/wabotjs": "^1.1.1",
+    "axios": "^1.18.0",
+    "boxen": "^8.0.1",
+    "bson": "^7.2.0",
+    "chalk": "^5.4.1",
+    "dotenv": "^16.5.0",
+    "figlet": "^1.8.1",
+    "gradient-string": "^3.0.0",
+    "mongodb": "^7.3.0",
+    "ora": "^8.2.0",
+    "qrcode-terminal": "^0.12.0",
+    "ruhend-scraper": "^8.3.0",
+    "form-data": "^4.0.2",
+    "file-type": "^19.6.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^24.0.0",
+    "@types/qrcode-terminal": "^0.12.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
